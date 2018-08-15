@@ -60,12 +60,12 @@ int update(int a[n][n],int res[n][n],int i,int j)
 int traverse(int a[3][3])
 {
 	int result=1;
-	int res[3][3];
+	int res[n][n];
 	memset(res,-1,sizeof res);
 
-	for(int i=0;i<3;i++)
+	for(int i=0;i<n;i++)
 	{
-		for(int j=0;j<3;j++)
+		for(int j=0;j<n;j++)
 		{
 			if(res[i][j]==-1)
 			{
@@ -78,7 +78,7 @@ int traverse(int a[3][3])
 }
 int main()
 {
-	int a[3][3];
+	int a[n][n];
 	input(a);
 
 	cout<<traverse(a)<<endl;
